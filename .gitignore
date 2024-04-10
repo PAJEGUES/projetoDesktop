@@ -1,0 +1,9 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/Projeto Desktop/.vs
+/Projeto Desktop/bin/Debug/Projeto Desktop.exe
+/Projeto Desktop/bin/Debug/Projeto Desktop.exe.config
+/Projeto Desktop/bin/Debug/Projeto Desktop.pdb
+/Projeto Desktop/obj/Debug
