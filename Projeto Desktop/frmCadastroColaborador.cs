@@ -73,7 +73,7 @@ namespace Projeto_Desktop
 
             bool salvar = true;
 
-            string nome = txtNome.Text;
+            string nome = txtNome.Text.Replace(" ", "");
             string veiculo = txtVeiculo.Text;
             string cpf = mTBCPF.Text.Replace(".", "").Replace("-", "").Replace(" ", "");
             string placa = mtbPlaca.Text.Replace("-", "");
@@ -85,7 +85,7 @@ namespace Projeto_Desktop
             int idade = Convert.ToInt32((hoje - dataNascimento).TotalDays / 365);
 
 
-            if(nome == "" || nome.Length < 1)
+            if(nome.Length == 0)
             {
                 MessageBox.Show("Nome preenchido Incorretamente!");
                 salvar = false;

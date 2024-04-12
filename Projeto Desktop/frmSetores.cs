@@ -44,14 +44,9 @@ namespace Projeto_Desktop
                     dgvSetor.DataSource = setor.CarregaSetor();
                 }
 
-
-                //Escolha das colunas que ficarão invisíveis
-                dgvSetor.Columns[0].Visible = false;
-
-
-                //Tamanho da coluna do nome
-                dgvSetor.Columns[1].Width = 842;
-                dgvSetor.Columns[2].Width = 841;
+                dgvSetor.Columns[0].Width = 300;
+                dgvSetor.Columns[1].Width = 300;
+                dgvSetor.Columns[2].Width = 300;
 
             }
             catch (Exception ex)
@@ -76,13 +71,9 @@ namespace Projeto_Desktop
                     dgvSetor.DataSource = setor.CarregaSetor();
                 }
 
-
-                //Escolha das colunas que ficarão invisíveis
-                dgvSetor.Columns[0].Visible = false;
-
-                //Tamanho da coluna do nome
-                dgvSetor.Columns[1].Width = 842;
-                dgvSetor.Columns[2].Width = 841;
+                dgvSetor.Columns[0].Width = 300;
+                dgvSetor.Columns[1].Width = 300;
+                dgvSetor.Columns[2].Width = 300;
 
             }
             catch (Exception ex)
@@ -120,8 +111,8 @@ namespace Projeto_Desktop
             if(linha.Count > 0)
             {
                 setor.idsetor = int.Parse(linha[0].Cells[0].Value.ToString());
-                setor.nomesetor = linha[0].Cells[2].Value.ToString();
-                setor.idcolaborador = int.Parse(linha[0].Cells[1].Value.ToString());
+                setor.nomesetor = linha[0].Cells[1].Value.ToString();
+                setor.idcolaborador = int.Parse(linha[0].Cells[0].Value.ToString());
 
                 frmCadastroSetor atualizar = new frmCadastroSetor();
                 atualizar.setor = setor;

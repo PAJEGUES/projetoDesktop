@@ -85,7 +85,6 @@ namespace Projeto_Desktop
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmHome home = new frmHome();
         }
 
         private void frmCadastroBairro_Load(object sender, EventArgs e)
